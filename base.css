@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1.25em;
+    color: #6D26E1;
+}
+
+header {
+    width: 100%;
+    height: 32px;
+    background: #6D26E1;
+    position: fixed;
+    z-index: 100;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    background: #6D26E1;
+}
+
+.nav-top {
+    position: fixed;
+    top: 32px;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #6D26E1;
+
+}
+
+.nav-top .tabs {
+    max-width: 820px;
+    margin: 0 auto;
+}
+.nav-top .tabs .tab:not(.active) {
+    border: none;
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 16px;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    margin: auto;
+    width: calc(100% - 32px);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 420px;
+}
+.nav-bottom button {
+    background: #6D26E1;
+    height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-bottom .btn-odai {
+    width: calc(100% - 48px);
+
+}
+
+article {
+    background: #F0F0F0;
+    padding: 74px 8px 16px;
+
+}
+
+section {
+    background: #F0F0F0;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+
+/*--area-photo--*/
+
+ul.area-photo__list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+ul.area-photo__list li {
+    list-style: none;
+    /* ここをwindowサイズで切り分け */
+    width: calc(50% - 4px);
+    padding: 8px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+@media screen and (min-width: 520px) {
+    ul.area-photo__list li {
+        width: calc(33% - 4px);
+    }
+}
+.area-photo__photo {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 4px;
+    background: #000;
+}
+
+.area-photo__photo .date {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.area-photo__photo .btn-allow-right {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+
+.area-photo__user-name {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 52px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*--area-moji--*/
+ul.area-moji__list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+ul.area-moji__list li {
+    list-style: none;
+    /* ここをwindowサイズで切り分け */
+    /*width: calc(50% - 4px);*/
+    width: 100%;
+    padding: 8px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+ul.area-moji__list li h3 {
+    margin: 8px 0;
+}
+
+ul.area-moji__list li .date {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+ul.area-moji__list li .btn-allow-right {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+ul.area-moji__list li .favorite-comment {
+    width: 50%;
+}
+
+/*--共有部品--*/
+
+ul.tabs {
+    width: 100%;
+    display: flex;
+}
+li.tab {
+    width: 100%;
+    height: 32px;
+    line-height: 30px;
+    color: #6D26E1;
+    background: #fff;
+    border-bottom: 1px solid #6D26E1;
+    text-align: center;
+    list-style: none;
+    font-size: 12px;
+}
+li.tab.active {
+    border-bottom: 2px solid #6D26E1;
+    font-weight: bold;
+}
+
+.favorite-comment {
+    display: flex;
+    height: 22px;
+    max-width: 250px;
+    color: #6D26E1;
+    font-weight: bold;
+}
+
+.favorit, .comment {
+    display: flex;
+    width: 50%;
+}
+
+.favorite-comment .icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    border-radius: 100px;
+    border: 1px solid #6D26E1;
+
+}
+
+.favorite-comment .number {
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.date {
+    background: #6D26E1;
+    width: 64px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.btn-allow-right {
+    position: relative;
+    width: 64px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    border: 1px solid #6D26E1;
+    line-height: 20px;
+    color: #6D26E1;
+    padding-right: 12px;
+    font-weight: bold;
+}
+.btn-allow-right div {
+    font-size: 10px;
+    transform: scale(0.8);
+}
+.btn-allow-right::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #6D26E1;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 6px;
+}
+
+.user-name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-search {
+    height: 40px;
+    width: 40px;
+    background: #6D26E1;
+}
