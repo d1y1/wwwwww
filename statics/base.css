@@ -335,24 +335,6 @@ li.tab.active {
     right: 0;
     top: 0;
 }
-/*.btn-allow-right::before {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    display: block;*/
-/*    width: 12px;*/
-/*    height: 12px;*/
-/*    margin: auto;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    right: 6px;*/
-/*    background-image: url(./images/icon_arrow_right.svg);*/
-/*    background-size: contain;*/
-/*    background-position: right;*/
-/*    vertical-align: middle;*/
-
-
-
-}
 
 .user-name {
     font-size: 12px;
