@@ -24,7 +24,7 @@ header {
 header h1 {
     color: #fff;
     font-size: 12px;
-    line-height: 28px;
+    line-height: 29px;
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ footer {
     position: relative;
     z-index: 100;
     width: 100%;
-    height: 500px;
+    height: 10px;
     background: #6D26E1;
 }
 
@@ -273,6 +273,12 @@ li.tab.active {
     max-width: 250px;
     color: #6D26E1;
     font-weight: bold;
+    text-align: center;
+}
+
+.favorite-comment .material-icons {
+    font-size: 15px;
+    line-height: 19px;
 }
 
 .favorit, .comment {
@@ -302,6 +308,8 @@ li.tab.active {
     text-align: center;
     color: #fff;
     border-radius: 2px;
+    height: 14px;
+    line-height: 14px;
 }
 
 .btn-allow-right {
@@ -311,29 +319,38 @@ li.tab.active {
     background: #fff;
     border-radius: 100px;
     border: 1px solid #6D26E1;
-    line-height: 21px;
+    line-height: 20px;
     color: #6D26E1;
-    padding-right: 12px;
     font-weight: bold;
+    padding-right: 8px;
 }
 .btn-allow-right div {
     font-size: 10px;
     transform: scale(0.8);
 }
-.btn-allow-right::before {
+.btn-allow-right .material-icons {
     position: absolute;
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin: auto;
+    font-size: 20px;
+    width: 20px;
+    right: 0;
     top: 0;
-    bottom: 0;
-    right: 6px;
-    background-image: url(./images/icon_arrow_right.svg);
-    background-size: contain;
-    background-position: right;
-    vertical-align: middle;
+}
+/*.btn-allow-right::before {*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    display: block;*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    margin: auto;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    right: 6px;*/
+/*    background-image: url(./images/icon_arrow_right.svg);*/
+/*    background-size: contain;*/
+/*    background-position: right;*/
+/*    vertical-align: middle;*/
+
+
 
 }
 
@@ -346,4 +363,9 @@ li.tab.active {
     height: 40px;
     width: 40px;
     background: #6D26E1;
+}
+.btn-search .material-icons {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
 }
