@@ -1,0 +1,38 @@
+{
+  "name": "wwwwww",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next -p 3001",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1y1/wwwwww.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d1y1/wwwwww/issues"
+  },
+  "homepage": "https://github.com/d1y1/wwwwww#readme",
+  "dependencies": {
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "@zeit/next-typescript": "^1.1.1",
+    "typescript": "^4.3.2"
+  }
+}
