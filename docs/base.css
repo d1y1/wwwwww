@@ -19,6 +19,7 @@ header {
     background: #6D26E1;
     position: fixed;
     z-index: 100;
+    top: 0;
 }
 
 header h1 {
@@ -85,6 +86,7 @@ footer {
 article {
     background: #F0F0F0;
     padding: 74px 8px 48px;
+    width: 100%;
 
 }
 
